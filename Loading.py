@@ -46,7 +46,7 @@ if not glfw.init():
     raise Exception("glfw can not be initialized!")
 
 # creating the window
-window = glfw.create_window(1280, 720, "My OpenGL window", None, None)
+window = glfw.create_window(1280, 720, "Elevador_Lacerda", None, None)
 
 # check if window was created
 if not window:
@@ -63,8 +63,7 @@ glfw.set_window_size_callback(window, window_resize)
 glfw.make_context_current(window)
 
 # load here the 3d meshes
-chibi_indices, chibi_buffer = ObjLoader.load_model("meshes/chibi.obj")
-# monkey_indices, monkey_buffer = ObjLoader.load_model("meshes/monkey.obj")
+ele_indices, ele_buffers = ObjLoader.load_model("Objects/Elevador.obj")
 
 shader = compileProgram(compileShader(vertex_src, GL_VERTEX_SHADER), compileShader(fragment_src, GL_FRAGMENT_SHADER))
 
@@ -73,45 +72,31 @@ VAO = glGenVertexArrays(2)
 VBO = glGenBuffers(2)
 # EBO = glGenBuffers(1)
 
-# Chibi VAO
+# Elevador VAO
 glBindVertexArray(VAO[0])
-# Chibi Vertex Buffer Object
+# Elevador Vertex Buffer Object
 glBindBuffer(GL_ARRAY_BUFFER, VBO[0])
-glBufferData(GL_ARRAY_BUFFER, chibi_buffer.nbytes, chibi_buffer, GL_STATIC_DRAW)
+glBufferData(GL_ARRAY_BUFFER, ele_buffers.nbytes, ele_buffers, GL_STATIC_DRAW)
 
-# glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO)
-# glBufferData(GL_ELEMENT_ARRAY_BUFFER, chibi_indices.nbytes, chibi_indices, GL_STATIC_DRAW)
-
-# chibi vertices
+# Ele vertices
 glEnableVertexAttribArray(0)
-glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, chibi_buffer.itemsize * 8, ctypes.c_void_p(0))
-# chibi textures
+glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, ele_buffers.itemsize * 8, ctypes.c_void_p(0))
+# Ele textures
 glEnableVertexAttribArray(1)
-glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, chibi_buffer.itemsize * 8, ctypes.c_void_p(12))
-# chibi normals
-glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, chibi_buffer.itemsize * 8, ctypes.c_void_p(20))
+glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, ele_buffers.itemsize * 8, ctypes.c_void_p(12))
+# Ele normals
+glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, ele_buffers.itemsize * 8, ctypes.c_void_p(20))
 glEnableVertexAttribArray(2)
 
-# Monkey VAO
-glBindVertexArray(VAO[1])
-# Monkey Vertex Buffer Object
-glBindBuffer(GL_ARRAY_BUFFER, VBO[1])
-glBufferData(GL_ARRAY_BUFFER, monkey_buffer.nbytes, monkey_buffer, GL_STATIC_DRAW)
-
-# monkey vertices
-glEnableVertexAttribArray(0)
-glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, monkey_buffer.itemsize * 8, ctypes.c_void_p(0))
-# monkey textures
-glEnableVertexAttribArray(1)
-glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, monkey_buffer.itemsize * 8, ctypes.c_void_p(12))
-# monkey normals
-glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, monkey_buffer.itemsize * 8, ctypes.c_void_p(20))
-glEnableVertexAttribArray(2)
-
-
-textures = glGenTextures(2)
+textures = glGenTextures(8)
 load_texture("Objects/Material2_extractedTex8168.jpg", textures[0])
-# load_texture("meshes/monkey.jpg", textures[1])
+load_texture("Objects/Material3_extractedTex818.jpg", textures[1])
+load_texture("Objects/Material4_extractedTex5027.jpg", textures[2])
+load_texture("Objects/Material5_extractedTex5941.jpg", textures[3])
+load_texture("Objects/Material6_extractedTex2490.jpg", textures[4])
+load_texture("Objects/Material9_extractedTex2972.jpg", textures[5])
+load_texture("Objects/Material29_extractedTex4581.png", textures[6])
+load_texture("Objects/Material30_extractedTex2346.jpg", textures[7])
 
 glUseProgram(shader)
 glClearColor(0, 0.1, 0.1, 1)
@@ -120,7 +105,7 @@ glEnable(GL_BLEND)
 glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)
 
 projection = pyrr.matrix44.create_perspective_projection_matrix(45, 1280 / 720, 0.1, 100)
-chibi_pos = pyrr.matrix44.create_from_translation(pyrr.Vector3([0, -5, -10]))
+Ele_pos = pyrr.matrix44.create_from_translation(pyrr.Vector3([0, -5, -10]))
 # monkey_pos = pyrr.matrix44.create_from_translation(pyrr.Vector3([-4, 0, 0]))
 
 # eye, target, up
@@ -140,17 +125,25 @@ while not glfw.window_should_close(window):
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
     rot_y = pyrr.Matrix44.from_y_rotation(0.8 * glfw.get_time())
-    model = pyrr.matrix44.multiply(rot_y, chibi_pos)
+    model = pyrr.matrix44.multiply(rot_y, Ele_pos)
 
-    # draw the chibi character
+    # draw the Ele character
     glBindVertexArray(VAO[0])
     glBindTexture(GL_TEXTURE_2D, textures[0])
+    glBindTexture(GL_TEXTURE_2D, textures[1])
+    glBindTexture(GL_TEXTURE_2D, textures[2])
+    glBindTexture(GL_TEXTURE_2D, textures[3])
+    glBindTexture(GL_TEXTURE_2D, textures[4])
+    glBindTexture(GL_TEXTURE_2D, textures[5])
+    glBindTexture(GL_TEXTURE_2D, textures[6])
+    glBindTexture(GL_TEXTURE_2D, textures[7])
+
     glUniformMatrix4fv(model_loc, 1, GL_FALSE, model)
-    glDrawArrays(GL_TRIANGLES, 0, len(chibi_indices))
-    # glDrawElements(GL_TRIANGLES, len(chibi_indices), GL_UNSIGNED_INT, None)
+    glDrawArrays(GL_TRIANGLES, 0, len(ele_indices))
+
 
     rot_y = pyrr.Matrix44.from_y_rotation(-0.8 * glfw.get_time())
-    model = pyrr.matrix44.multiply(rot_y, monkey_pos)
+    model = pyrr.matrix44.multiply(rot_y, Ele_pos)
 
 # terminate glfw, free up allocated resources
 glfw.terminate()
