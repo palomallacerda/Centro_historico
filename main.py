@@ -9,7 +9,7 @@ from OpenGL.GLU import *
 
 window = pyglet.window.Window(fullscreen=True)
 window.projection = pyglet.window.Projection3D()
-scene = pywavefront.Wavefront('model.obj')
+scene = pywavefront.Wavefront('Objects/model.obj')
 
 @window.event
 def on_draw():
