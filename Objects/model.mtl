@@ -1,8 +1,8 @@
 # Blender MTL File: 'model.blend'
-# Material Count: 22
+# Material Count: 24
 
 newmtl *2
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -10,9 +10,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material2_extractedTex8168.jpg
 
 newmtl *23
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -20,9 +21,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material23_extractedTex8696.jpg
 
 newmtl *29
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -30,9 +32,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material29_extractedTex4581.jpg
 
 newmtl *3
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -40,9 +43,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material3_extractedTex818.jpg
 
 newmtl *30
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -50,9 +54,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material30_extractedTex2346.jpg
 
 newmtl *4
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -60,9 +65,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material4_extractedTex5027.jpg
 
 newmtl *5
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -70,9 +76,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material5_extractedTex5941.jpg
 
 newmtl *7
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -80,9 +87,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material7_extractedTex502.jpg
 
 newmtl *8
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -90,10 +98,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-
+map_Kd textures/balaustre.jpg
 
 newmtl Aluminium_scratches
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -101,10 +109,13 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-
+map_Bump /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_Normal.jpg
+map_Kd /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_BaseColor.jpg
+map_Ns /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_Roughness.jpg
+refl /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_Metallic.jpg
 
 newmtl Material
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.036837 0.094619 0.046043
 Ks 0.262590 0.262590 0.262590
@@ -113,8 +124,28 @@ Ni 1.450000
 d 1.000000
 illum 2
 
+newmtl Material.001
+Ns 359.999993
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.002
+Ns 676.114779
+Ka 0.511811 0.511811 0.511811
+Kd 0.476990 0.272350 0.166693
+Ks 0.952756 0.952756 0.952756
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
 newmtl Mesa_tronco_de_medeira
-Ns 407.305802
+Ns 452.562002
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.436364 0.436364 0.436364
@@ -122,9 +153,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Bump -bm 0.200000 /jhon projetos/Projetos locais/Gobá arquitetura/casa de lago em corumba/Ref e maps/Mesa de madeira_normal.jpg
+map_Kd /jhon projetos/Projetos locais/Gobá arquitetura/casa de lago em corumba/Ref e maps/Mesa de madeira.jpg
 
 newmtl Old_White_Metal
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -132,9 +165,12 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 3
+map_Bump /home/paloma/Downloads/assets/materials/old_white_metal_97da47e0-10b9-4b10-85fe-e2390a3e9e9d/textures_1k/WhiteMetal_normal.jpg
+map_Kd /home/paloma/Downloads/assets/materials/old_white_metal_97da47e0-10b9-4b10-85fe-e2390a3e9e9d/textures_1k/WhiteMetal_diffuse.jpg
+map_Ns /home/paloma/Downloads/assets/materials/old_white_metal_97da47e0-10b9-4b10-85fe-e2390a3e9e9d/textures_1k/WhiteMetal_roughness.jpg
 
 newmtl Tiles_02
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -142,9 +178,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd D:/WORK/BlenderFiles/Materials/Tiles078_2K-JPG/Tiles078_2K_Color.jpg
+map_Ns D:/WORK/BlenderFiles/Materials/Tiles078_2K-JPG/Tiles078_2K_Roughness.jpg
 
 newmtl Visor_digital
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.139657 0.800000 0.215040
 Ks 0.500000 0.500000 0.500000
@@ -154,7 +192,7 @@ d 1.000000
 illum 2
 
 newmtl [Fencing_Metal_Straight]
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -162,9 +200,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Cerca_de_metal_reta_extractedTex2868.png
 
 newmtl a
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.083526 0.083526 0.083526
 Ks 0.500000 0.500000 0.500000
@@ -174,7 +213,7 @@ d 1.000000
 illum 2
 
 newmtl metais
-Ns 225.000000
+Ns 250.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.019442 0.021803 0.023767
 Ks 0.500000 0.500000 0.500000
@@ -184,7 +223,7 @@ d 1.000000
 illum 2
 
 newmtl trash_bag
-Ns 323.999994
+Ns 359.999993
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -194,7 +233,7 @@ d 1.000000
 illum 2
 
 newmtl trash_body
-Ns 323.999994
+Ns 359.999993
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
@@ -204,7 +243,7 @@ d 1.000000
 illum 2
 
 newmtl trash_cover
-Ns 323.999994
+Ns 359.999993
 Ka 1.000000 1.000000 1.000000
 Kd 0.182775 0.527720 0.009884
 Ks 0.500000 0.500000 0.500000
@@ -212,9 +251,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Bump -bm 0.800000 /home/paloma/Downloads/assets/models/trash_bin_cf826974-66b6-4d88-be6e-024f7a0599ae/textures_1k/Plastic005_2K_Normal.jpg
 
 newmtl trash_transparent_cover
-Ns 323.999994
+Ns 359.999993
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
 Ks 0.500000 0.500000 0.500000
