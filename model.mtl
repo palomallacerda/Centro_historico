@@ -1,5 +1,5 @@
 # Blender MTL File: 'model.blend'
-# Material Count: 22
+# Material Count: 24
 
 newmtl *2
 Ns 225.000000
@@ -10,6 +10,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material2_extractedTex8168.jpg
 
 newmtl *23
 Ns 225.000000
@@ -20,6 +21,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material23_extractedTex8696.jpg
 
 newmtl *29
 Ns 225.000000
@@ -30,6 +32,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material29_extractedTex4581.jpg
 
 newmtl *3
 Ns 225.000000
@@ -40,6 +43,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material3_extractedTex818.jpg
 
 newmtl *30
 Ns 225.000000
@@ -50,6 +54,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material30_extractedTex2346.jpg
 
 newmtl *4
 Ns 225.000000
@@ -60,6 +65,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material4_extractedTex5027.jpg
 
 newmtl *5
 Ns 225.000000
@@ -70,6 +76,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material5_extractedTex5941.jpg
 
 newmtl *7
 Ns 225.000000
@@ -80,6 +87,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Material7_extractedTex502.jpg
 
 newmtl *8
 Ns 225.000000
@@ -90,7 +98,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-
+map_Kd textures/balaustre.jpg
 
 newmtl Aluminium_scratches
 Ns 225.000000
@@ -101,7 +109,10 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-
+map_Bump textures/Aluminium_scratches_Normal.jpg
+map_Kd textures/Aluminium_scratches_BaseColor.jpg
+map_Ns textures/Aluminium_scratches_Roughness.jpg
+refl textures/Aluminium_scratches_Metallic.jpg
 
 newmtl Material
 Ns 225.000000
@@ -113,6 +124,26 @@ Ni 1.450000
 d 1.000000
 illum 2
 
+newmtl Material.001
+Ns 323.999994
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Material.002
+Ns 608.503301
+Ka 0.511811 0.511811 0.511811
+Kd 0.476990 0.272350 0.166693
+Ks 0.952756 0.952756 0.952756
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
 newmtl Mesa_tronco_de_medeira
 Ns 407.305802
 Ka 1.000000 1.000000 1.000000
@@ -122,6 +153,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Bump -bm 0.200000 textures/Mesa_de_madeira_normal.jpg
+map_Kd textures/Mesa_de_madeira.jpg
 
 newmtl Old_White_Metal
 Ns 225.000000
@@ -132,6 +165,9 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 3
+map_Bump textures/WhiteMetal_normal.jpg
+map_Kd textures/WhiteMetal_diffuse.jpg
+map_Ns textures/WhiteMetal_roughness.jpg
 
 newmtl Tiles_02
 Ns 225.000000
@@ -142,6 +178,8 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Tiles078_2K_Color.jpg
+map_Ns textures/Tiles078_2K_Roughness.jpg
 
 newmtl Visor_digital
 Ns 225.000000
@@ -162,6 +200,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Kd textures/Cerca_de_metal_reta_extractedTex2868.png
 
 newmtl a
 Ns 225.000000
@@ -212,6 +251,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+map_Bump -bm 0.800000 textures/Plastic005_2K_Normal.jpg
 
 newmtl trash_transparent_cover
 Ns 323.999994
