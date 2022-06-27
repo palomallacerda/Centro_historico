@@ -13,14 +13,15 @@ from OpenGL.GLU import *
 from OBJLoader import *
 
 pygame.init()
+pygame.display.set_caption('Elevador Lacerda - UFAL2022')
 viewport = (800,600)
 hx = viewport[0]/2
 hy = viewport[1]/2
 srf = pygame.display.set_mode(viewport, OPENGL | DOUBLEBUF)
 
-glLightfv(GL_LIGHT0, GL_POSITION,  (-40, 200, 100, 0.0))
-glLightfv(GL_LIGHT0, GL_AMBIENT, (0.2, 0.2, 0.2, 1.0))
-glLightfv(GL_LIGHT0, GL_DIFFUSE, (0.5, 0.5, 0.5, 1.0))
+glLightfv(GL_LIGHT0, GL_POSITION,  (-40, 200, 100, 100.0))
+glLightfv(GL_LIGHT0, GL_AMBIENT, (1.2, 1.2, 1.2, 100.0))
+glLightfv(GL_LIGHT0, GL_DIFFUSE, (30.5, 30.5, 30.5, 100.0))
 glEnable(GL_LIGHT0)
 glEnable(GL_LIGHTING)
 glEnable(GL_COLOR_MATERIAL)
@@ -45,6 +46,7 @@ zpos = 5
 rotate = move = False
 while 1:
     clock.tick(30)
+    glEnable(GL_TEXTURE_3D)
     for e in pygame.event.get():
         if e.type == QUIT:
             sys.exit()
@@ -66,7 +68,6 @@ while 1:
             if move:
                 tx += i
                 ty -= j
-
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     glLoadIdentity()
 

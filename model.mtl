@@ -1,5 +1,5 @@
-# Blender MTL File: 'model.blend'
-# Material Count: 24
+# Blender MTL File: 'model.blend1'
+# Material Count: 27
 
 newmtl *2
 Ns 225.000000
@@ -34,6 +34,17 @@ d 1.000000
 illum 2
 map_Kd textures/Material29_extractedTex4581.jpg
 
+newmtl *29.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material29_extractedTex4581.jpg
+
 newmtl *3
 Ns 225.000000
 Ka 1.000000 1.000000 1.000000
@@ -45,7 +56,29 @@ d 1.000000
 illum 2
 map_Kd textures/Material3_extractedTex818.jpg
 
+newmtl *3.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material3_extractedTex818.jpg
+
 newmtl *30
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material30_extractedTex2346.jpg
+
+newmtl *30.001
 Ns 225.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
@@ -68,6 +101,17 @@ illum 2
 map_Kd textures/Material4_extractedTex5027.jpg
 
 newmtl *5
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material5_extractedTex5941.jpg
+
+newmtl *5.001
 Ns 225.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
@@ -134,28 +178,6 @@ Ni 1.000000
 d 1.000000
 illum 2
 
-newmtl Material.002
-Ns 608.503301
-Ka 0.511811 0.511811 0.511811
-Kd 0.476990 0.272350 0.166693
-Ks 0.952756 0.952756 0.952756
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 3
-
-newmtl Mesa_tronco_de_medeira
-Ns 407.305802
-Ka 1.000000 1.000000 1.000000
-Kd 0.800000 0.800000 0.800000
-Ks 0.436364 0.436364 0.436364
-Ke 0.000000 0.000000 0.000000
-Ni 1.450000
-d 1.000000
-illum 2
-map_Bump -bm 0.200000 textures/Mesa_de_madeira_normal.jpg
-map_Kd textures/Mesa_de_madeira.jpg
-
 newmtl Old_White_Metal
 Ns 225.000000
 Ka 1.000000 1.000000 1.000000
@@ -170,6 +192,18 @@ map_Kd textures/WhiteMetal_diffuse.jpg
 map_Ns textures/WhiteMetal_roughness.jpg
 
 newmtl Tiles_02
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Tiles078_2K_Color.jpg
+map_Ns textures/Tiles078_2K_Roughness.jpg
+
+newmtl Tiles_02.001
 Ns 225.000000
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
