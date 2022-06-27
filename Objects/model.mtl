@@ -1,5 +1,9 @@
 # Blender MTL File: 'model.blend'
+<<<<<<< HEAD:Objects/model.mtl
 # Material Count: 24
+=======
+# Material Count: 27
+>>>>>>> pyglet/main:model.mtl
 
 newmtl *2
 Ns 250.000000
@@ -33,6 +37,20 @@ Ni 1.450000
 d 1.000000
 illum 2
 map_Kd textures/Material29_extractedTex4581.jpg
+<<<<<<< HEAD:Objects/model.mtl
+=======
+
+newmtl *29.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material29_extractedTex4581.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl *3
 Ns 250.000000
@@ -44,6 +62,20 @@ Ni 1.450000
 d 1.000000
 illum 2
 map_Kd textures/Material3_extractedTex818.jpg
+<<<<<<< HEAD:Objects/model.mtl
+=======
+
+newmtl *3.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material3_extractedTex818.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl *30
 Ns 250.000000
@@ -55,6 +87,20 @@ Ni 1.450000
 d 1.000000
 illum 2
 map_Kd textures/Material30_extractedTex2346.jpg
+<<<<<<< HEAD:Objects/model.mtl
+=======
+
+newmtl *30.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material30_extractedTex2346.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl *4
 Ns 250.000000
@@ -77,6 +123,20 @@ Ni 1.450000
 d 1.000000
 illum 2
 map_Kd textures/Material5_extractedTex5941.jpg
+<<<<<<< HEAD:Objects/model.mtl
+=======
+
+newmtl *5.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Material5_extractedTex5941.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl *7
 Ns 250.000000
@@ -109,10 +169,17 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+<<<<<<< HEAD:Objects/model.mtl
 map_Bump /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_Normal.jpg
 map_Kd /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_BaseColor.jpg
 map_Ns /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_Roughness.jpg
 refl /home/paloma/Downloads/assets/materials/aluminium_scratc_24ac2638-8946-4f80-822b-d64b859f938e/textures_1k/Aluminium_scratches_Metallic.jpg
+=======
+map_Bump textures/Aluminium_scratches_Normal.jpg
+map_Kd textures/Aluminium_scratches_BaseColor.jpg
+map_Ns textures/Aluminium_scratches_Roughness.jpg
+refl textures/Aluminium_scratches_Metallic.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl Material
 Ns 250.000000
@@ -125,6 +192,7 @@ d 1.000000
 illum 2
 
 newmtl Material.001
+<<<<<<< HEAD:Objects/model.mtl
 Ns 359.999993
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
@@ -146,11 +214,14 @@ illum 3
 
 newmtl Mesa_tronco_de_medeira
 Ns 452.562002
+=======
+Ns 323.999994
+>>>>>>> pyglet/main:model.mtl
 Ka 1.000000 1.000000 1.000000
 Kd 0.800000 0.800000 0.800000
-Ks 0.436364 0.436364 0.436364
+Ks 0.500000 0.500000 0.500000
 Ke 0.000000 0.000000 0.000000
-Ni 1.450000
+Ni 1.000000
 d 1.000000
 illum 2
 map_Bump -bm 0.200000 /jhon projetos/Projetos locais/Gobá arquitetura/casa de lago em corumba/Ref e maps/Mesa de madeira_normal.jpg
@@ -165,9 +236,15 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 3
+<<<<<<< HEAD:Objects/model.mtl
 map_Bump /home/paloma/Downloads/assets/materials/old_white_metal_97da47e0-10b9-4b10-85fe-e2390a3e9e9d/textures_1k/WhiteMetal_normal.jpg
 map_Kd /home/paloma/Downloads/assets/materials/old_white_metal_97da47e0-10b9-4b10-85fe-e2390a3e9e9d/textures_1k/WhiteMetal_diffuse.jpg
 map_Ns /home/paloma/Downloads/assets/materials/old_white_metal_97da47e0-10b9-4b10-85fe-e2390a3e9e9d/textures_1k/WhiteMetal_roughness.jpg
+=======
+map_Bump textures/WhiteMetal_normal.jpg
+map_Kd textures/WhiteMetal_diffuse.jpg
+map_Ns textures/WhiteMetal_roughness.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl Tiles_02
 Ns 250.000000
@@ -178,8 +255,25 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+<<<<<<< HEAD:Objects/model.mtl
 map_Kd D:/WORK/BlenderFiles/Materials/Tiles078_2K-JPG/Tiles078_2K_Color.jpg
 map_Ns D:/WORK/BlenderFiles/Materials/Tiles078_2K-JPG/Tiles078_2K_Roughness.jpg
+=======
+map_Kd textures/Tiles078_2K_Color.jpg
+map_Ns textures/Tiles078_2K_Roughness.jpg
+
+newmtl Tiles_02.001
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd textures/Tiles078_2K_Color.jpg
+map_Ns textures/Tiles078_2K_Roughness.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl Visor_digital
 Ns 250.000000
@@ -251,7 +345,11 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
+<<<<<<< HEAD:Objects/model.mtl
 map_Bump -bm 0.800000 /home/paloma/Downloads/assets/models/trash_bin_cf826974-66b6-4d88-be6e-024f7a0599ae/textures_1k/Plastic005_2K_Normal.jpg
+=======
+map_Bump -bm 0.800000 textures/Plastic005_2K_Normal.jpg
+>>>>>>> pyglet/main:model.mtl
 
 newmtl trash_transparent_cover
 Ns 359.999993
