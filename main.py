@@ -18,8 +18,11 @@ viewport = (800,600)
 hx = viewport[0]/2
 hy = viewport[1]/2
 srf = pygame.display.set_mode(viewport, OPENGL | DOUBLEBUF)
+LIGHT_SIZE = 7
+LIGHT_COUNT = 3
 
 glLightfv(GL_LIGHT0, GL_POSITION,  (-40, 200, 100, 100.0))
+glLight(GL_LIGHT0, GL_POSITION,  (1.1, 0, 3, 1)) 
 glLightfv(GL_LIGHT0, GL_AMBIENT, (1.2, 1.2, 1.2, 100.0))
 glLightfv(GL_LIGHT0, GL_DIFFUSE, (30.5, 30.5, 30.5, 100.0))
 glEnable(GL_LIGHT0)
@@ -27,6 +30,7 @@ glEnable(GL_LIGHTING)
 glEnable(GL_COLOR_MATERIAL)
 glEnable(GL_DEPTH_TEST)
 glShadeModel(GL_SMOOTH)           # most obj files expect to be smooth-shaded
+gluLookAt(0, 8, 0, 0, 0, 0, 0, 0, 1)
 
 # LOAD OBJECT AFTER PYGAME INIT
 obj = OBJ(sys.argv[1], swapyz=True)
@@ -42,17 +46,22 @@ glMatrixMode(GL_MODELVIEW)
 
 rx, ry = (0,0)
 tx, ty = (0,0)
-zpos = 5
+zpos =0 
 rotate = move = False
+
+
+
 while 1:
     clock.tick(30)
     glEnable(GL_TEXTURE_3D)
+    pressed_keyboard = pygame.key.get_pressed()
+    
     for e in pygame.event.get():
         if e.type == QUIT:
             sys.exit()
         elif e.type == KEYDOWN and e.key == K_ESCAPE:
             sys.exit()
-        elif e.type == MOUSEBUTTONDOWN:
+        elif e.type == MOUSEBUTTONDOWN: #Enable mouse operations
             if e.button == 4: zpos = max(1, zpos-1)
             elif e.button == 5: zpos += 1
             elif e.button == 1: rotate = True
@@ -68,6 +77,18 @@ while 1:
             if move:
                 tx += i
                 ty -= j
+        if e.type == pygame.KEYDOWN: #Enable keyborads operations
+            if e.key == pygame.K_d:
+                rx +=10
+            if e.key == pygame.K_a:
+                rx -=10
+            if e.key == pygame.K_e:
+                ry += 10
+            if e.key == pygame.K_s:
+                ry -= 10
+        
+
+
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     glLoadIdentity()
 
