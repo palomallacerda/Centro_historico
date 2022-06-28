@@ -22,7 +22,6 @@ LIGHT_SIZE = 7
 LIGHT_COUNT = 3
 
 glLightfv(GL_LIGHT0, GL_POSITION,  (-40, 200, 100, 100.0))
-glLight(GL_LIGHT0, GL_POSITION,  (1.1, 0, 3, 1)) 
 glLightfv(GL_LIGHT0, GL_AMBIENT, (1.2, 1.2, 1.2, 100.0))
 glLightfv(GL_LIGHT0, GL_DIFFUSE, (30.5, 30.5, 30.5, 100.0))
 glEnable(GL_LIGHT0)
@@ -30,7 +29,11 @@ glEnable(GL_LIGHTING)
 glEnable(GL_COLOR_MATERIAL)
 glEnable(GL_DEPTH_TEST)
 glShadeModel(GL_SMOOTH)           # most obj files expect to be smooth-shaded
-gluLookAt(0, 8, 0, 0, 0, 0, 0, 0, 1)
+
+rx, ry= (0,0)
+tx, ty = (0,0)
+zpos = 0 
+rotate = move = False
 
 # LOAD OBJECT AFTER PYGAME INIT
 obj = OBJ(sys.argv[1], swapyz=True)
@@ -41,13 +44,9 @@ glMatrixMode(GL_PROJECTION)
 glLoadIdentity()
 width, height = viewport
 gluPerspective(90.0, width/float(height), 1, 100.0)
+gluLookAt(rx, ry, zpos, 0, 0, -5, 0, 1, 0)
 glEnable(GL_DEPTH_TEST)
 glMatrixMode(GL_MODELVIEW)
-
-rx, ry = (0,0)
-tx, ty = (0,0)
-zpos =0 
-rotate = move = False
 
 
 
@@ -97,5 +96,7 @@ while 1:
     glRotate(ry, 1, 0, 0)
     glRotate(rx, 0, 1, 0)
     glCallList(obj.gl_list)
+
+
 
     pygame.display.flip()
