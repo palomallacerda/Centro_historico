@@ -1,5 +1,2 @@
 pyopengl
-pywavefront
-pyglet
-Numpy
 pygame

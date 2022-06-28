@@ -32,7 +32,7 @@ glShadeModel(GL_SMOOTH)           # most obj files expect to be smooth-shaded
 
 rx, ry= (0,0)
 tx, ty = (0,0)
-zpos = 0 
+zpos = 0
 rotate = move = False
 
 # LOAD OBJECT AFTER PYGAME INIT
@@ -54,7 +54,6 @@ while 1:
     clock.tick(30)
     glEnable(GL_TEXTURE_3D)
     pressed_keyboard = pygame.key.get_pressed()
-    
     for e in pygame.event.get():
         if e.type == QUIT:
             sys.exit()
@@ -79,20 +78,20 @@ while 1:
         if e.type == pygame.KEYDOWN: #Enable keyborads operations
             if e.key == pygame.K_d:
                 rx +=10
+                zpos += 10
             if e.key == pygame.K_a:
-                rx -=10
-            if e.key == pygame.K_e:
+                rx -= 10
+                zpos -= 10
+            if e.key == pygame.K_w:
                 ry += 10
             if e.key == pygame.K_s:
                 ry -= 10
-        
-
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     glLoadIdentity()
 
     # RENDER OBJECT
-    glTranslate(tx/20., ty/20., - zpos)
+    glTranslate(tx/50., ty/50., -zpos)
     glRotate(ry, 1, 0, 0)
     glRotate(rx, 0, 1, 0)
     glCallList(obj.gl_list)
